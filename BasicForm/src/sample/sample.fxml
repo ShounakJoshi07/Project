@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@13437.jpg" />
+               </image>
+            </ImageView>
+            <VBox layoutX="101.0" layoutY="93.0" prefHeight="600.0" prefWidth="566.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <GridPane prefHeight="357.0" prefWidth="400.0" VBox.vgrow="NEVER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="344.7837829589844" minWidth="10.0" prefWidth="148.34849548339844" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="516.3939476013184" minWidth="10.0" prefWidth="377.65150451660156" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label blendMode="COLOR_DODGE" contentDisplay="CENTER" prefHeight="90.0" prefWidth="140.0" text="Name" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="IBM Plex Mono" size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <effect>
+                              <Glow level="0.74" />
+                           </effect>
+                        </Label>
+                        <Label blendMode="COLOR_DODGE" prefHeight="75.0" prefWidth="190.0" text="Email" textAlignment="RIGHT" textFill="WHITE" wrapText="true" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="IBM Plex Mono" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <effect>
+                              <Glow level="0.74" />
+                           </effect>
+                        </Label>
+                        <Label blendMode="COLOR_DODGE" prefHeight="90.0" prefWidth="140.0" text="Username" textFill="WHITE" wrapText="true" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="IBM Plex Mono" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <effect>
+                              <Glow level="0.74" />
+                           </effect>
+                        </Label>
+                        <Label blendMode="COLOR_DODGE" prefHeight="75.0" prefWidth="167.0" text="Password" textFill="WHITE" wrapText="true" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="IBM Plex Mono" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <effect>
+                              <Glow level="0.74" />
+                           </effect>
+                        </Label>
+                        <TextField fx:id="name_field" opacity="0.7" prefHeight="36.0" prefWidth="100.0" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="IBM Plex Mono" size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <GridPane.margin>
+                              <Insets right="40.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="email_field" opacity="0.7" prefHeight="36.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="IBM Plex Mono" size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <GridPane.margin>
+                              <Insets right="40.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="uname_field" opacity="0.7" prefHeight="36.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="IBM Plex Mono" size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <GridPane.margin>
+                              <Insets right="40.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <PasswordField fx:id="pass_field" opacity="0.7" prefHeight="36.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="IBM Plex Mono" size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <GridPane.margin>
+                              <Insets right="40.0" />
+                           </GridPane.margin>
+                        </PasswordField>
+                     </children>
+                     <padding>
+                        <Insets left="40.0" top="50.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+               <padding>
+                  <Insets top="25.0" />
+               </padding>
+            </VBox>
+            <AnchorPane layoutX="651.0" layoutY="409.0" prefHeight="150.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <children>
+                  <Button alignment="CENTER" layoutX="297.0" layoutY="44.0" mnemonicParsing="false" onMouseClicked="#form" opacity="0.81" prefHeight="45.0" prefWidth="200.0" text="Submit" textAlignment="CENTER" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="50.0">
+                     <font>
+                        <Font name="IBM Plex Mono" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
